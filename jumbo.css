@@ -1,0 +1,101 @@
+.jumbotron {
+				padding-top: 5rem;
+				background-color: #e2edff;
+}
+
+#projects {
+			 background-color: #e2edff;	
+}
+
+section{
+				pading-top: 5rem;
+}
+
+/* My Favorite J-POP Artist */
+.jpop-box {
+   position: relative;
+		background-color: #0c6efd;
+		border-radius: 10px;
+		height: 500px;
+		transform-style: preserve-3d;
+}
+
+.jpop-box::before {
+		 content: 'MY';
+		 position: absolute;
+		 color: #000000;
+		 font-size: 6em;
+		 font-weight: bold;
+		 font-style: italic;
+		 top: 30px;
+		 left: 50%;
+		 transform: translate(-50%, 0);
+		 opacity: 0;
+		 transition: 0.5s;
+}
+
+.jpop-box:hover:: before	 {		 
+		 opacity: 0.2;		
+} 
+
+.jpop-box::after {
+		 content: 'FAVORITE';
+		 position: absolute;
+		 color: #000000;
+		 font-size: 4.3em;
+		 font-weight: bold;
+		 font-style: italic;
+		 top: 350px;
+		 left: 50%;
+		 transform: translate(-50%, 0);
+		 opacity: 0;
+		 transition: 0.5s;
+}
+
+.jpop-box:hover::after {
+		 opacity: 0.2; 
+}
+
+.artist-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+		 color: #ffffff;
+		 text-align: center;
+		 font-size: 2em;
+		 opacity: 0;
+		 transform: translate 3d(0, 0, 50px);
+		 transition: 0.5s;
+}
+
+.jpop-box:hover .jpop {
+			top: 20px;
+			opacity: 1;
+}
+
+.playlist-detail-button {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate3d(-50%, 0, 150px);
+				opacity: 0;
+				transition: 0.5s;
+}
+
+.jpop-box:hover .playlist-detail-button {
+				opacity: 1;
+				bottom: 20px;
+}
+
+.jpop-img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate3d(-50%, -50%, 100px);
+				max-width: 400px;
+				transition: 0.5s;
+}
+
+.jpop-box:hover .jpop-img {
+				transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
